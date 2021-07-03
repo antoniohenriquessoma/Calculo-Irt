@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Glass</title>
+</head>
+
+<body>
+    <div class="bubbles">
+        <span class="one"><div class="view"><span>Segurança Social</span></div>
+    </span>
+    <span class="two"></span>
+    <span class="three"></span>
+    <span class="four"></span>
+    <span class="five"></span>
+    <span class="six"></span>
+    <span class="seven"><div class="irt"><span>IRT</span></div>
+    </span>
+    </div>
+    <div class="container">
+        <form action="#" name="forms">
+
+            <label for="">Digite seu salário liquido</label>
+            <input type="text" name="answer">
+            <div class="button">
+                <input type="button" value="7" onclick="forms.answer.value +='7'">
+                <input type="button" value="8" onclick="forms.answer.value +='8'">
+                <input type="button" value="9" onclick="forms.answer.value +='9'">
+            </div>
+            <div class="button">
+                <input type="button" value="4" onclick="forms.answer.value +='4'">
+                <input type="button" value="5" onclick="forms.answer.value +='5'">
+                <input type="button" value="6" onclick="forms.answer.value +='6'">
+            </div>
+            <div class="button">
+                <input type="button" value="1" onclick="forms.answer.value +='1'">
+                <input type="button" value="2" onclick="forms.answer.value +='2'">
+                <input type="button" value="3" onclick="forms.answer.value +='3'">
+            </div>
+            <div class="button">
+                <input type="button" value="," onclick="forms.answer.value +=','">
+                <input type="button" value="0" onclick="forms.answer.value +='0'">
+                <input type="button" value="<-" onclick="forms.answer.value =''">
+            </div>
+            <div class="buttons">
+                <input type="button" value="DEL" onclick="forms.answer.value = forms.answer.value.substr(0, forms.answer.value.length -1)">
+                <input type="button" value="Limpar" onclick="forms.answer.value = ''">
+                <input type="button" value="Enter" onClick="clicou()">
+            </div>
+
+        </form>
+    </div>
+    <script src="js/scritpt.js"></script>
+</body>
+
+</html>
